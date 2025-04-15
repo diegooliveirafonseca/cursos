@@ -1,0 +1,32 @@
+#Exercicio1
+
+input salarioMensal
+input horasTrabalhadas
+valorHora = salarioMensal/horasTrabalhadas
+print valorHora
+
+#Exercicio2
+
+input nome
+print nome + " seja bem-vindo"
+
+#Exercicio3
+
+input valor1
+input valor2
+
+if (valor1 > valor2) print valor1 + " é o maior"
+else print valor2 + " é o maior"
+
+#Exercicio4
+
+input numero
+if numero > 0 {
+	while (numero > 0){
+		cont = numero - 1
+		fatorial = numero * cont	
+		numero = cont
+	}
+	print fatorial
+}else print "digite apenas números positivos"
+	

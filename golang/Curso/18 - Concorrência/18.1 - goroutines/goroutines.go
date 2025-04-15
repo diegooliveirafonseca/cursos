@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func escrever(texto string) {
+	for {
+		fmt.Println(texto)
+		time.Sleep(time.Second)
+	}
+}
+
+func main() {
+	go escrever("Olá mundo")
+	go escrever("Programando em Go")
+	escrever("Escrevendo")
+}

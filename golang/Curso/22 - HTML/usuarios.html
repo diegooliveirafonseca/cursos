@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+</head>
+<body>
+    <h2>Tela de usuários</h2>
+    <h4>Mostrando tela de usuários</h4>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ação</th>
+        </tr>
+        <tr>
+            <td>{{.Nome}}</td>
+            <td>{{.Email}}</td>
+            <td><button id="botao">Validar</button></td>
+        </tr>
+    </table>
+
+    <script>
+        var botao = document.getElementById("botao");
+        botao.onclick = function() {
+            alert("Usuário validado!");
+        }
+    </script>
+</body>
+</html>
